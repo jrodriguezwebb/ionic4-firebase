@@ -6,11 +6,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-list>
-    <ion-item-sliding>
-      <!--button[ruterLink]="['/details, todo.id']" -->  
-      <ion-item lines="inset" >
+    <ion-item-sliding *ngFor="let todo of todos">
+      <ion-item lines="inset" button [routerLink]="['/details', todo.id]" >
         <ion-label>
           {{todo.task}}
         </ion-label>
