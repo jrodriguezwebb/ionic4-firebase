@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ionic CRUD - TODOS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding>
+      <!--button[ruterLink]="['/details, todo.id']" -->  
+      <ion-item lines="inset" >
+        <ion-label>
+          {{todo.task}}
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-options (click)="onRemove(item)" color="secondary">
+          <ion-icon name="checkmark" slot="end"></ion-icon>
+        </ion-item-options>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/details" routerDirection="forward">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
