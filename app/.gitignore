@@ -3,4 +3,5 @@
 /resources
 /platforms
 /www
-/firebase
+google-services.json
+GoogleService-Info.plist
