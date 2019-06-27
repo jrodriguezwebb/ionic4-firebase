@@ -167,7 +167,7 @@ module.exports = (grunt) => {
     });
 
     grunt.registerTask('build', () => {
-        if(grunt.file.isFile('ionic.config.json')){
+        if(grunt.file.isFile('ionic.config.json') || grunt.file.isFile(pathConfigXML)){
             grunt.task.run(['shell:ionicBuildAndroid', 'shell:ionicBuildIOS']);
         } else {
             grunt.task.run('shell:angularBuild');

@@ -29,6 +29,7 @@
     "cordova-ios": "5.0.1",
     "cordova-plugin-androidx": "^1.0.2",
     "cordova-plugin-androidx-adapter": "^1.1.0",
+    "cordova-plugin-cocoapod-support": "^1.6.2",
     "cordova-plugin-cocoapod-supportx": "^1.7.2",
     "cordova-plugin-firebasex": "^3.0.6",
     "core-js": "^2.5.4",
@@ -100,7 +101,8 @@
         "ANDROID_SHORTCUTBADGER_VERSION": "1.1.22"
       },
       "cordova-plugin-androidx": {},
-      "cordova-plugin-androidx-adapter": {}
+      "cordova-plugin-androidx-adapter": {},
+      "cordova-plugin-cocoapod-support": {}
     },
     "platforms": [
       "android",
